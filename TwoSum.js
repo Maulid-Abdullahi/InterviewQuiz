@@ -1,6 +1,9 @@
 //check if all pairs in the array  sum up to S
 function sum(arr, S) {
     var sums = [];
+    if(arr.length === 0){
+        console.log("Empty Array")
+    }
     
     // check each element in array
     for (var i = 0; i < arr.length; i++) {
@@ -16,5 +19,5 @@ function sum(arr, S) {
     return sums;
     }
 
-    sum([4, 6, 1, -7, 3, 10], 5);
-    console.log(sum([3, 5, -4, 8, 11, 1, -1, 6], 10));
+    //sum([4, 6, 1, -7, 3, 10], 5);
+    console.log(sum([3, 5, -4, 6, 11, 7, -1, 6,9,8], 10));
